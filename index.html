@@ -14,15 +14,16 @@
              <a href="">
                  <figure><img src="" alt=""></figure>
                 </a>
-                <a href="./index.html">Home</a>
-                <a href="productFeatures/productFeatures.html">Features</a>
-                <a href="prices/Prices.html">Pricing</a>
-                <a href="teamPage/TeamPage.html">About us</a>
+                <a href="">Home</a>
+                <a href="">Features</a>
+                <a href="">Pricing</a>
+                <a href="">About us</a>
             </div>
             <div>
                 <a href="">Buy Now</a>
             </div>
     </nav>
+    
     <header>
         <!-- # TODO hero section - Houssem -->
         <h2>
@@ -32,27 +33,35 @@
         <a>Shop Now</a>
         <!-- background image goes here -->
     </header>
-    <main>
-        <section>
-            <!-- # TODO rating - Houssem -->
-             <h2>What our customers are saying</h2>
-             <div>
-                <div class="user-review">
-                    <figure>
-                        <img src="icons/user.svg" alt="">
-                    </figure>
-                    <h3>Name</h3>
-                    <div class="stars">
-                        <img src="icons/star.svg" alt="">
-                    </div>
-                    <figure><img src="icons/quote.svg" alt=""></figure> <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quae?</p>
-                </div>
-             </div>
-        </section>
 
-        <section>
-            <!-- # TODO pain points - Kevin -->
+
+    <main>
+
+
+        <section class="ratings">
+            <h2>What Students Are Saying</h2>
+            
+             <div class="rating-cards">
+
+                <article class="rating-card">
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>"I haven't missed a lecture all semester. My legs didn't really give me a choice."</p>
+                    
+                    <span class="reviewer">– Alex, 2nd year Engineering</span>
+                </article>
+
+                 <article class="rating-card">
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    <p>"Got me to my 8:30 AM while I was still half asleep. Literal cheat code."</p>
+                    <span class="reviewer">– Priya, 1st year Science</span>
+                </article>
+
+                <article class="rating-card">
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>"Finally found the right building on the first try. Life changing."</p>
+                    <span class="reviewer">– Marc, 3rd year Arts</span>
+                </article>
+            </div>
         </section>
 
 
@@ -70,39 +79,58 @@
         </section>
 
 
-        <section>
+        <section class="faq"></section>
 
-            <h2>FAQ</h2>
+            <h2>Frequently Asked Questions</h2>
 
-            <h3>Question 1</h3>
-            <p>Answer goes here.</p>
+            <div class="faq-item">
 
-            <h3>Question 2</h3>
-            <p>Answer goes here.</p>
+                 <button class="faq-question">How do I enter my schedule?<span class="faq-icon">+</span></button>
+        
+                 <div class="faq-answer">
+                    <p>Connect the shoes to our app and type in your classes, or import your timetable directly.</p>
+                </div>
+            </div>
 
-            <h3>Question 3</h3>
-            <p>Answer goes here.</p>
-
+            <div class="faq-item">
+                <button class="faq-question">Can I stop the shoes while walking?<span class="faq-icon">+</span></button>
+                
+                <div class="faq-answer">
+                    <p>The shoes will only stop once you arrive at your class. Plan your coffee breaks in your schedule.</p>
+                </div>
+            </div>
+ 
+            <div class="faq-item">
+                <button class="faq-question">How long does the battery last?<span class="faq-icon">+</span></button>
+                
+                <div class="faq-answer">
+                    <p>About a full school day of walking. Charge them overnight with the included cable.</p>
+                </div>
+            </div>
+ 
+            <div class="faq-item">
+                <button class="faq-question">What sizes are available?<span class="faq-icon">+</span></button>
+        
+                <div class="faq-answer">
+                    <p>Men's and women's sizes 5 to 14.</p>
+                </div>
+            </div>
         </section>
 
 
     </main>
 
-    <footer>
-        
-        <p>Logo goes here.</p>
-
-        <p>&copy; Brand Name. All rights reserved.</p>
-        
-        <ul>
-            <li><a href="https://instagram.com/">Instagram</a></li>
-            <li><a href="https://x.com/">X</a></li>
-            <li><a href="https://youtube.com/">Youtube</a></li>
-        </ul>
-
-    </footer>
+<footer class="footer">
+    <div class="footer-logo">CAMPUS<span>WALKERS</span></div>
+ 
+    <p class="footer-middle">&copy; 2026 Campus-Walkers. All rights reserved.</p>
+ 
+    <div class="socials">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="TikTok">TikTok</a>
+      <a href="#" aria-label="X">X</a>
+    </div>
+</footer>
 
 </body>
-<script src="index.js"></script>
-<script src="global.js"></script>
 </html>

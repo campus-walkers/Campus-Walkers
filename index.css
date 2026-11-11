@@ -1,3 +1,47 @@
 header {
     margin-top: 58px;
 }
+
+:root {
+  --white: #FFFFFF;
+  --charcoal: #1E2328;
+  --orange: #FF5A1F;
+  --light-grey: #F4F6F8;
+}
+
+.ratings {
+  background-color: var(--light-grey);
+}
+ 
+.rating-cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ 
+.rating-card {
+  background-color: var(--white);
+  flex: 1 1 260px;
+  max-width: 340px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-top: 4px solid var(--orange);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+ 
+.stars {
+  color: var(--orange);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+ 
+.rating-card p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+ 
+.reviewer {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
