@@ -72,7 +72,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 10px 30px;
     background-color: #E2E8F080 ;
     backdrop-filter: blur(12px);         
 	border-bottom: 1px solid #0000000d;       
@@ -81,6 +81,30 @@ nav {
     left: 0;
     transition: transform 0.3s ease-in-out; 
     z-index: 1000;
+}
+
+#logo-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#logo-link h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#logo {
+    width: 40px;
+}
+
+#buy-nav {
+    background-color: #FF5A1F;
+    color: white;
+    padding: 8px 10px;
+    border-radius:10px;
+    width: max-content;
+    text-decoration: none;
 }
 
 nav.hidden {
