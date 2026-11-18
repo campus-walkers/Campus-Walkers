@@ -1,5 +1,120 @@
+
+/* hero section */
+
 header {
     margin-top: 58px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: calc(100vh - 58px);
+    padding: 0 60px;
+}
+header div {
+    max-width: 50%;
+}
+
+.hero--image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46vw;
+    position: relative;
+}
+
+#hero-image--background-circle {
+    background-color: #ff99746b;
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    right: auto;
+    z-index: -1;
+}
+
+.hero--header {
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+
+#oo-circle {
+    display: inline-block;
+    height: 36px;
+    width: 120px;
+    border: 6px solid #FF5A1F;
+    border-radius: 50px;
+}
+
+.hero--description {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #777777;
+    min-width: 300px;
+    margin-bottom: 40px;
+    max-width: 64%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.buy-now {
+    background-color: #FF5A1F;
+    font-size: 18px;
+    color: white;
+    padding: 12px 14px;
+    border-radius:40px;
+    width: max-content;
+    text-decoration: none;
+}
+
+/* ratings sections */
+
+:root {
+  --white: #FFFFFF;
+  --charcoal: #1E2328;
+  --orange: #FF5A1F;
+  --light-grey: #F4F6F8;
+}
+
+.ratings {
+  background-color: var(--light-grey);
+}
+ 
+.rating-cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ 
+.rating-card {
+  background-color: var(--white);
+  flex: 1 1 260px;
+  max-width: 340px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-top: 4px solid var(--orange);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+ 
+.stars {
+  color: var(--orange);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+ 
+.rating-card p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+ 
+.reviewer {
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 :root {
