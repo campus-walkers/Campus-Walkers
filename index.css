@@ -6,6 +6,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    min-height: calc(100vh - 58px);
+    padding: 0 60px;
 }
 header div {
     max-width: 50%;
@@ -15,15 +17,15 @@ header div {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 400px;
+    width: 46vw;
     position: relative;
 }
 
 #hero-image--background-circle {
-    background-color: #FF5A1F;
+    background-color: #ff99746b;
     border-radius: 50%;
-    width: 65%;
-    height: 65%;
+    width: 60%;
+    height: 60%;
     position: absolute;
     right: auto;
     z-index: -1;
@@ -45,19 +47,14 @@ header div {
     border-radius: 50px;
 }
 
-.hero--header__info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
 .hero--description {
     font-weight: 300;
     font-size: 16px;
     line-height: 20px;
     color: #777777;
     min-width: 300px;
+    margin-bottom: 40px;
+    max-width: 64%;
 }
 
 .full-height {
@@ -71,9 +68,10 @@ header div {
     padding: 12px 14px;
     border-radius:40px;
     width: max-content;
-    flex-shrink: 0;
     text-decoration: none;
 }
+
+/* ratings sections */
 
 :root {
   --white: #FFFFFF;
