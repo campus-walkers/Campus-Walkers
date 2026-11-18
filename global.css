@@ -102,3 +102,8 @@ nav a {
 figure img {
     width: 100%;
 }
+
+.headers {
+    font-size: 25px;
+    font-weight: bold;
+}
