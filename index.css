@@ -126,6 +126,11 @@ header div {
 
 .ratings {
   background-color: var(--light-grey);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
  
 .rating-cards {
