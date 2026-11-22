@@ -73,47 +73,6 @@ header div {
 
 /* ratings sections */
 
-:root {
-  --white: #FFFFFF;
-  --charcoal: #1E2328;
-  --orange: #FF5A1F;
-  --light-grey: #F4F6F8;
-}
-
-.ratings {
-  background-color: var(--light-grey);
-}
- 
-.rating-cards {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
- 
-.rating-card {
-  background-color: var(--white);
-  flex: 1 1 260px;
-  max-width: 340px;
-  padding: 1.5rem;
-  border-radius: 12px;
-}
- 
-.stars {
-  color: var(--orange);
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-}
- 
-.rating-card p {
-  font-style: italic;
-  margin-bottom: 1rem;
-}
- 
-.reviewer {
-  font-weight: 600;
-  font-size: 0.9rem;
-}
 
 :root {
   --white: #FFFFFF;
@@ -124,7 +83,7 @@ header div {
 
 .ratings {
   background-color: var(--light-grey);
-  padding: 30px;
+  padding: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,7 +104,6 @@ header div {
   padding: 1.5rem;
   border-radius: 12px;
   border-top: 4px solid var(--orange);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
  
 .stars {
@@ -173,4 +131,65 @@ header div {
 .features-header {
   line-height: 32px;
   margin-bottom: 26px;
+}
+
+
+
+
+
+.faq {
+  background-color: var(--light-grey);
+  padding: 60px;
+}
+
+.faq .headers {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  max-width: 800px;
+  margin: 0 auto 14px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  background: none;
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq-icon {
+  color: var(--orange);
+  font-size: 1.5rem;
+  transition: transform 0.5s;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 24px 18px;
+}
+
+.faq-answer p,
+.rating-card p {
+  line-height: 1.5;
+}
+
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
 }
