@@ -5,71 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus walkers</title>
-    <link rel="stylesheet" href="/global.css">
-    <link rel="stylesheet" href="pricing.css">
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="Prices.css">
 </head>
 
 <body>
-
-    <!-- nav (same as home page) -->
+    <!-- Nav (same as home page) -->
     <nav>
-        <a href="/index.html" id="logo-link">
-            <figure id="logo"><img src="/icons/logo.svg" alt="campus walkers logo"></figure>
+        <a href="../index.html" id="logo-link">
+            <figure id="logo"><img src="../icons/logo.svg" alt="campus walkers logo"></figure>
             <h1>campus walkers</h1>
         </a>
         <div>
-            <a href="/index.html">Home</a>
-            <a href="/productFeatures/productFeatures.html">Features</a>
-            <a href="/prices/Prices.html">Pricing</a>
-            <a href="/teamPage/TeamPage.html">About us</a>
+            <a href="../index.html">Home</a>
+            <a href="../productFeatures/productFeatures.html">Features</a>
+            <a href="../prices/Prices.html">Pricing</a>
+            <a href="../teamPage/TeamPage.html">About us</a>
         </div>
         <div>
-            <a href="/prices/Prices.html" id="buy-nav">Buy Now</a>
+            <a href="../prices/Prices.html" id="buy-nav">Buy Now</a>
         </div>
     </nav>
 
-    <main style="padding-top: 80px;">
+    <main>
 
-        <!-- title -->
-        <div class="title">
-            <h1>Pricing</h1>
+         <div class="title">
+            <h2 class="title-text">Pricing</h2>
             <p>Pick the pair that gets you to class.</p>
         </div>
 
-        <!-- shoes -->
+
         <div class="cards">
 
             <div class="card">
-                <h2>Walker Classic</h2>
-                <p>Gets you to class. That's it.</p>
+                <h3>Walker Classic</h3>
+                <div class="shoe-box">
+                    <img class="shoe big-shoe" src="../images/one_campus_walker_shoe.png" alt="Walker Classic shoe">
+                </div>
+                <p>Gets you to class.</p>
                 <p class="price">$99</p>
                 <p>Colour: <span id="colour1">Black</span></p>
                 <button class="colour black" onclick="pickColour('colour1', 'Black')"></button>
                 <button class="colour white" onclick="pickColour('colour1', 'White')"></button>
-                <button class="colour orange" onclick="pickColour('colour1', 'Orange')"></button>
+                <button class="colour light-orange" onclick="pickColour('colour1', 'Light Orange')"></button>
             </div>
 
             <div class="card">
-                <h2>Walker Runner</h2>
+                <h3>Walker Runner</h3>
+                <div class="shoe-box">
+                    <img class="shoe" src="../images/campus_walker_runner.png" alt="Walker Runner shoe">
+                </div>
                 <p>Faster walking and a longer battery.</p>
                 <p class="price">$149</p>
-                <p>Colour: <span id="colour2">Grey</span></p>
-                <button class="colour grey" onclick="pickColour('colour2', 'Grey')"></button>
-                <button class="colour blue" onclick="pickColour('colour2', 'Blue')"></button>
+                <p>Colour: <span id="colour2">Black</span></p>
                 <button class="colour black" onclick="pickColour('colour2', 'Black')"></button>
+                <button class="colour white" onclick="pickColour('colour2', 'White')"></button>
+                <button class="colour light-orange" onclick="pickColour('colour2', 'Light Orange')"></button>
             </div>
 
             <div class="card">
-                <h2>Walker Boot</h2>
+                <h3>Walker Boot</h3>
+                <div class="shoe-box">
+                    <img class="shoe" src="../images/campus_walker_boot.png" alt="Walker Boot">
+                </div>
                 <p>For snowy walks across campus.</p>
                 <p class="price">$199</p>
-                <p>Colour: <span id="colour3">Brown</span></p>
-                <button class="colour brown" onclick="pickColour('colour3', 'Brown')"></button>
-                <button class="colour tan" onclick="pickColour('colour3', 'Tan')"></button>
+                <p>Colour: <span id="colour3">Black</span></p>
                 <button class="colour black" onclick="pickColour('colour3', 'Black')"></button>
+                <button class="colour white" onclick="pickColour('colour3', 'White')"></button>
+                <button class="colour light-orange" onclick="pickColour('colour3', 'Light Orange')"></button>
             </div>
 
         </div>
+
     </main>
 
     <!-- footer (same as home page) -->
@@ -85,7 +93,8 @@
         </div>
     </footer>
 
-    <script src="pricing.js"></script>
+    <script src="Prices.js"></script>
+    <script src="../global.js"></script>
 </body>
 
 </html>
