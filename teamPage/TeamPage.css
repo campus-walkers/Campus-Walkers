@@ -1,0 +1,182 @@
+/*
+    Team page styles
+    Colors and fonts follow style_guidelines.txt; fonts come from global.css (Roboto)
+    White #FFFFFF | Charcoal #1E2328 | Orange #FF5A1F | Light grey #F4F6F8
+*/
+
+:root {
+    --white: #FFFFFF;
+    --charcoal: #1E2328;
+    --orange: #FF5A1F;
+    --light-grey: #F4F6F8;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--charcoal);
+    padding-top: 80px;
+}
+
+
+.team-intro {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.team-intro h1 {
+    font-weight: 800;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    margin-bottom: 16px;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 20px 80px;
+}
+
+.team-card {
+    flex: 0 0 300px;
+    max-width: 100%;
+    background-color: var(--white);
+    border: 1px solid #0000001a;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 8px #0000000d;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px #0000001f;
+}
+
+.card-banner {
+    height: 90px;
+    background-color: var(--charcoal);
+    border-bottom: 4px solid var(--orange);
+}
+
+.avatar {
+    width: 130px;
+    height: 130px;
+    margin: -65px auto 0;     
+    border-radius: 50%;
+    border: 4px solid var(--white);
+    background-color: var(--light-grey);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar img[src$="user.svg"] {
+    width: 60%;
+    height: 60%;
+    opacity: 0.35;
+}
+
+.team-card h2 {
+    font-weight: 800;
+    font-size: 1.3rem;
+    margin-top: 16px;
+}
+
+.team-card .role {
+    font-size: 0.95rem;
+    color: #5b6470;
+    margin-top: 6px;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding: 0 20px;
+    margin-top: 18px;
+}
+
+.socials li {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+}
+
+.socials a {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.socials svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: #8a929c;
+    transition: fill 0.2s ease;
+}
+
+.socials a:hover svg,
+.socials a:focus-visible svg {
+    fill: var(--orange);
+}
+
+
+.footer {
+    background-color: var(--charcoal);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 30px;
+}
+
+.footer-logo {
+    font-weight: 800;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.footer-logo span {
+    color: var(--orange);
+}
+
+.footer-middle {
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .team-card {
+        flex-basis: 100%;
+        max-width: 340px;
+    }
+}
