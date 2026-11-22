@@ -4,12 +4,7 @@
     White #FFFFFF | Charcoal #1E2328 | Orange #FF5A1F | Light grey #F4F6F8
 */
 
-:root {
-    --white: #FFFFFF;
-    --charcoal: #1E2328;
-    --orange: #FF5A1F;
-    --light-grey: #F4F6F8;
-}
+
 
 body {
     background-color: var(--white);
@@ -135,44 +130,7 @@ body {
 }
 
 
-.footer {
-    background-color: var(--charcoal);
-    color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 16px;
-    padding: 30px;
-}
 
-.footer-logo {
-    font-weight: 800;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-}
-
-.footer-logo span {
-    color: var(--orange);
-}
-
-.footer-middle {
-    font-size: 0.9rem;
-}
-
-.footer-links {
-    display: flex;
-    gap: 20px;
-}
-
-.footer-links a {
-    color: var(--orange);
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
 
 @media (max-width: 700px) {
     .team-card {
