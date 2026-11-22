@@ -131,3 +131,7 @@ figure img {
     font-size: 25px;
     font-weight: bold;
 }
+
+.container {
+    padding: 70px 50px;
+}

@@ -163,3 +163,14 @@ header div {
   font-weight: 600;
   font-size: 0.9rem;
 }
+
+#features {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.features-header {
+  line-height: 32px;
+  margin-bottom: 26px;
+}
