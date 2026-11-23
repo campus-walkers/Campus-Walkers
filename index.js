@@ -19,7 +19,7 @@ for (let i = 0; i < questions.length; i++) {
 const revealSelectors = [
   ".ratings .headers",
   ".rating-card",
-  "features--description",
+  ".features--description",
   ".features--img",
   ".faq .headers",
   ".faq-item",

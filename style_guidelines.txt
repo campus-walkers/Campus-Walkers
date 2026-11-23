@@ -14,8 +14,8 @@ Orange #FF5A1F - buttons, links
 Light grey #F4F6F8 - seperate sections, makes a little contrast with the white.
 
 Typography
-For the headings: Montserrat, bold.
-Body: Montserrat, regular.
+For the headings: Roboto, bold.
+Body: Roboto, regular.
 
 headers: 48px MAX, 22px Min
 lead paragraph: 18px

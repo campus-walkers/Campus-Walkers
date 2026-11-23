@@ -92,16 +92,24 @@ nav {
 #logo-link {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
 }
 
-#logo-link h1 {
-    font-size: 18px;
-    font-weight: bold;
-}
-
+/* shoe icon */
 #logo {
     width: 40px;
+}
+
+/* CAMPUSWALKERS text, same style as the footer */
+#logo-link h1 {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: #1E2328;
+}
+
+#logo-link h1 span {
+    color: #FF5A1F;
 }
 
 #buy-nav {

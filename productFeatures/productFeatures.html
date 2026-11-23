@@ -13,7 +13,7 @@
     <nav>
         <a href="../index.html" id="logo-link">
             <figure id="logo"><img src="../icons/logo.svg" alt="campus walkers logo"></figure>
-            <h1>campus walkers</h1>
+            <h1>CAMPUS<span>WALKERS</span></h1>
         </a>
         <div>
             <a href="../index.html">Home</a>
@@ -25,9 +25,99 @@
             <a href="../prices/Prices.html" id="buy-nav">Buy Now</a>
         </div>
     </nav>
-    <main style="padding-top: 80px;">
+
+    <main>
+
+        <div class="title">
+            <h2 class="title-text">Features</h2>
+            <p>Everything packed inside your new favourite shoes.</p>
+        </div>
+
+
+
+        <section class="features">
+
+            <div class="feature-card" id="smart-chip">
+                <span class="feature-number">01</span>
+                <h3>Smart Chip</h3>
+                <p>Stores your class schedule and plans the fastest route. It leaves early enough to get you there on time.</p>
+            </div>
+
+            <div class="feature-card" id="gps">
+                <span class="feature-number">02</span>
+                <h3>Campus GPS</h3>
+                <p>A built-in map of every building, hallway and shortcut on campus. No more getting lost on the first day.</p>
+            </div>
+
+            <div class="feature-card" id="pulse-sole">
+                <span class="feature-number">03</span>
+                <h3>Pulse Sole</h3>
+                <p>Gentle electric pulses move your legs one step at a time. You just stay upright and enjoy the ride.</p>
+            </div>
+
+            <div class="feature-card" id="balance-control">
+                <span class="feature-number">04</span>
+                <h3>Balance Control</h3>
+                <p>Pressure sensors in the sole keep you steady on stairs, slopes and icy sidewalks.</p>
+            </div>
+
+            <div class="feature-card" id="status-glow">
+                <span class="feature-number">05</span>
+                <h3>Status Glow</h3>
+                <p>The green lights in the sole show your battery and trip status, and help people see you at night.</p>
+            </div>
+
+            <div class="feature-card" id="weatherproof-knit">
+                <span class="feature-number">06</span>
+                <h3>Weatherproof Knit</h3>
+                <p>A tough knit upper that keeps rain and snow out, so your feet stay dry between classes.</p>
+            </div>
+
+        </section>
+
+
+
+        <section class="how-it-works">
+            <h2 class="section-title">How It Works</h2>
+
+            <div class="steps">
+                <button class="step-button selected"
+                    data-title="Add your schedule"
+                    data-text="Open the Campus Walkers app and type in your classes, or import your timetable. It only takes a few minutes.">
+                    1. Add your schedule
+                </button>
+
+                <button class="step-button"
+                    data-title="Put on your shoes"
+                    data-text="Step in and tighten the laces. The shoes connect to your phone and plan the best route to your next class.">
+                    2. Put on your shoes
+                </button>
+
+                <button class="step-button"
+                    data-title="Arrive on time"
+                    data-text="Relax while the shoes walk you there. You arrive before the lecture starts, every single time.">
+                    3. Arrive on time
+                </button>
+            </div>
+
+            <!-- This box changes when a step is clicked -->
+            <div class="step-box">
+                <h3 id="step-title">Add your schedule</h3>
+                <p id="step-text">Open the Campus Walkers app and type in your classes, or import your timetable. It only takes a few minutes.</p>
+            </div>
+        </section>
+
+
+
+        <section class="call-to-action">
+            <h2>Ready to never walk to class again?</h2>
+            <a href="../prices/Prices.html" class="features-button">See Prices</a>
+        </section>
 
     </main>
+
+
+
     <footer class="footer">
         <div class="footer-logo">CAMPUS<span>WALKERS</span></div>
 
@@ -39,6 +129,10 @@
             <a href="#" aria-label="X">X</a>
         </div>
     </footer>
+
+    <script src="productFeatures.js"></script>
+    <script src="../global.js"></script>
+
 </body>
 
 </html>
